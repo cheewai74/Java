@@ -1,0 +1,4 @@
+String[] str_array = {"item1","item2","item3"};
+List<String> list = new ArrayList<String>(Arrays.asList(str_array));
+list.remove("item2");
+str_array = list.toArray(new String[0]);
