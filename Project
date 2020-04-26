@@ -1,0 +1,7 @@
+
+Selenium:
+https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java (POM.xml)
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/package-summary.html  (API Reference )
+
+Cucumber:
+https://mvnrepository.com/artifact/info.cukes/cucumber-junit (POM.xml)
