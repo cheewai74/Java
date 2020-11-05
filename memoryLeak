@@ -11,6 +11,12 @@ System.gc();
 
 Approach 2: Assign null to Variables That Are No Longer Needed
 
+// -- Near to the end of the code --
+
+ System.gc();  //request for GC to run 
+ gc2 = null;  //nullify gc2
+ Runtime.getRuntime().gc(); //request for GC to run
+
 Approach 3: Referred to JAVA API for thoses that need to close
 try {
     BufferedReader br = new BufferedReader(new FileReader(inputFile));
