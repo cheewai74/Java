@@ -1,0 +1,21 @@
+Approach 1:
+
+Runtime runtime = Runtime.getRuntime();
+long availableBytes = runtime.freeMemory();
+System.out.println("Available memory: " + availableBytes / 1024 + "k");
+.
+.
+availableBytes = runtime.freeMemory();
+System.out.println("Available memory: " + availableBytes / 1024 + "k");
+System.gc();
+
+Approach 2: Assign null to Variables That Are No Longer Needed
+
+Approach 3: Referred to JAVA API for thoses that need to close
+try {
+    BufferedReader br = new BufferedReader(new FileReader(inputFile));
+    ...
+    ...
+} catch (Exception e) {
+    e.printStacktrace();
+}
